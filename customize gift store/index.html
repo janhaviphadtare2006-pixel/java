@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Gifts - Custom Creations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">GiftCraft</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#customize">Customize</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="animated-text">Because Every Gift Should Feel Personal</h1>
+            <p class="hero-subtitle">Create unique, customized gifts that tell a story.</p>
+            <div class="cta-buttons">
+                <button class="btn-primary floating-btn">Customize Your Gift</button>
+                <button class="btn-secondary floating-btn">Explore Collection</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Gift Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Photo Frames">
+                        <div class="tags">
+                            <span class="tag best-seller">Best Seller</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Photo Frames</h3>
+                        <p>Personalize with your favorite memories.</p>
+                        <button class="btn-customize">Customize</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400" alt="Customized Mugs">
+                        <div class="tags">
+                            <span class="tag new">New</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Customized Mugs</h3>
+                        <p>Start your day with a personal touch.</p>
+                        <button class="btn-customize">Customize</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400" alt="Name Keychains">
+                        <div class="tags">
+                            <span class="tag trending">Trending</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Name Keychains</h3>
+                        <p>Carry your name with style.</p>
+                        <button class="btn-customize">Customize</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" alt="Printed T-shirts">
+                    </div>
+                    <div class="product-info">
+                        <h3>Printed T-shirts</h3>
+                        <p>Express yourself uniquely.</p>
+                        <button class="btn-customize">Customize</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400" alt="Gift Hampers">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gift Hampers</h3>
+                        <p>Curated bundles for every occasion.</p>
+                        <button class="btn-customize">Customize</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization Section -->
+    <section id="customize" class="customize">
+        <div class="container">
+            <h2 class="section-title">Customize Your Gift</h2>
+            <div class="customize-steps">
+                <div class="step active" data-step="1">
+                    <h3>Step 1: Upload Photo</h3>
+                    <input type="file" id="photo-upload" accept="image/*">
+                    <label for="photo-upload" class="upload-btn">Choose File</label>
+                </div>
+                <div class="step" data-step="2">
+                    <h3>Step 2: Add Text/Message</h3>
+                    <textarea placeholder="Enter your personal message..."></textarea>
+                </div>
+                <div class="step" data-step="3">
+                    <h3>Step 3: Choose Color/Style</h3>
+                    <div class="color-options">
+                        <button class="color-btn" data-color="#F8BBD9">Blush</button>
+                        <button class="color-btn" data-color="#E1BEE7">Lavender</button>
+                        <button class="color-btn" data-color="#D7CCC8">Beige</button>
+                        <button class="color-btn" data-color="#FFD54F">Gold</button>
+                    </div>
+                </div>
+            </div>
+            <div class="live-preview">
+                <h3>Live Preview</h3>
+                <div class="preview-box">
+                    <img id="preview-image" src="https://via.placeholder.com/300x200?text=Your+Photo" alt="Preview">
+                    <div id="preview-text" class="preview-text">Your Message Here</div>
+                </div>
+                <button class="btn-add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"Absolutely loved my customized mug! It was the perfect gift."</p>
+                    <cite>- Sarah J.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"The photo frames are stunning. Highly recommend!"</p>
+                    <cite>- Mike T.</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Great quality and fast delivery. Will order again."</p>
+                    <cite>- Emily R.</cite>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe for exclusive deals and new arrivals.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">GiftCraft</div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#customize">Customize</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2023 GiftCraft. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

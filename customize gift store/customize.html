@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Gift Store - Customize</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Custom Gift Store Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="customize.html">Customize</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Customization Section -->
+    <section class="customize-page">
+        <h1>Customize Your Gift</h1>
+        <div class="customize-form">
+            <div class="form-group">
+                <label for="photo-upload">Upload Photo:</label>
+                <input type="file" id="photo-upload" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="name-message">Name/Message:</label>
+                <textarea id="name-message" placeholder="Enter your personalized message"></textarea>
+            </div>
+            <button class="btn primary" onclick="previewCustomization()">Preview</button>
+        </div>
+        <div class="preview-section">
+            <h2>Preview</h2>
+            <div id="preview-container">
+                <img id="preview-image" src="" alt="Preview Image" style="display: none;">
+                <p id="preview-text"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Customized Gift Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
